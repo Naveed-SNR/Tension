@@ -1,0 +1,31 @@
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 11px;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+}
+ul
+{
+    display: inline;
+}
+li {
+    display: inline;
+    list-style: none;
+}
+
+div p {
+    color: red;
+}
+p {
+    color: blue;
+}
