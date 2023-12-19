@@ -26,6 +26,11 @@ li {
 div p {
     color: red;
 }
+
 p {
     color: blue;
+}
+a[href$=".in"]
+{
+    background-color: red;
 }
