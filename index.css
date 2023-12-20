@@ -3,9 +3,39 @@ body {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
+    box-sizing: border-box;
     
 }
-
+.container {
+    background-color: black;
+    padding: 8px;
+    margin: 8px;
+    position: relative;
+}
+.title {
+    
+    color: cyan;
+    display: inline-block;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    padding: 11px;
+}
+.title:hover{
+    background-color: grey;
+}
+.banner {
+    text-align: center;
+}
+input:valid {
+    border: 2px solid green;
+}
+div img {
+    
+    width: 1500px;
+    height: 740px;
+}
 nav {
     background-color: black;
     color: white;
@@ -13,6 +43,7 @@ nav {
     position: sticky;
     top: 0;
     width: 100vw;
+    box-sizing: border-box;
 }
 ul
 {
@@ -30,7 +61,16 @@ div p {
 p {
     color: blue;
 }
+p::after {
+    content: "sample";
+    color: white;
+}
 a[href$=".in"]
 {
     background-color: red;
+}
+
+a[href$=".in"]::
+{
+    background-color: green;
 }
