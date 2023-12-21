@@ -29,7 +29,7 @@ body {
     text-align: center;
 }
 input:valid {
-    border: 2px solid green;
+    border: 10px solid green;
 }
 div img {
     
@@ -44,7 +44,9 @@ nav {
     top: 0;
     width: 100vw;
     box-sizing: border-box;
+    z-index: 1;
 }
+
 ul
 {
     display: inline;
@@ -70,7 +72,36 @@ a[href$=".in"]
     background-color: red;
 }
 
-a[href$=".in"]::
+a[href$=".in"]:hover
 {
     background-color: green;
+}
+
+.flex {
+    /* Making the container flexible */
+    display: flex;
+    width: 100vw;
+    height: 300px;
+    padding: 8px;
+    align-items: end;
+    margin: 8px;
+    background-color: blue;
+    box-sizing: border-box;
+    gap: 10px;
+    
+    
+}
+
+.flex-children {
+    background-color: white;
+    padding: 3px;
+    height: 30px;
+}
+
+.child-1 {
+    justify-self: center;
+}
+
+.icons {
+    color: white;
 }
