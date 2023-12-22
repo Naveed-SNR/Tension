@@ -6,102 +6,73 @@ body {
     box-sizing: border-box;
     
 }
-.container {
-    background-color: black;
-    padding: 8px;
-    margin: 8px;
-    position: relative;
-}
-.title {
-    
-    color: cyan;
-    display: inline-block;
-    background-color: black;
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    padding: 11px;
-}
-.title:hover{
-    background-color: grey;
-}
-.banner {
-    text-align: center;
-}
-input:valid {
-    border: 10px solid green;
-}
-div img {
-    
-    width: 1500px;
-    height: 740px;
-}
+
 nav {
-    background-color: black;
-    color: white;
-    padding: 11px;
-    position: sticky;
-    top: 0;
+    background-color: #010409;
     width: 100vw;
-    box-sizing: border-box;
-    z-index: 1;
-}
-
-ul
-{
-    display: inline;
-}
-li {
-    display: inline;
-    list-style: none;
-}
-
-div p {
-    color: red;
-}
-
-p {
-    color: blue;
-}
-p::after {
-    content: "sample";
-    color: white;
-}
-a[href$=".in"]
-{
-    background-color: red;
-}
-
-a[href$=".in"]:hover
-{
-    background-color: green;
-}
-
-.flex {
-    /* Making the container flexible */
+    padding: 21px;
     display: flex;
-    width: 100vw;
-    height: 300px;
-    padding: 8px;
-    align-items: end;
-    margin: 8px;
-    background-color: blue;
+    align-items: center;
+    justify-content: space-between;
     box-sizing: border-box;
-    gap: 10px;
-    
-    
 }
 
-.flex-children {
-    background-color: white;
-    padding: 3px;
-    height: 30px;
+.hamburger {
+    color: #848d97;
+    transform: scale(1.4);
 }
 
-.child-1 {
-    justify-self: center;
-}
-
-.icons {
+.logo {
     color: white;
+    transform: scale(1.4);
+}
+
+.username {
+    color: white;
+}
+
+.nav-item {
+    
+    display: flex;
+    gap: 11px;
+    align-items: center;
+
+}
+
+.search {
+    background-color: transparent;
+    border: 1px solid #30363D;
+    color: white;
+    padding: 4px;
+    border-radius: 8px;
+    width: 240px;
+}
+
+.search:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+
+.line {
+    height: 21px;
+    color: white;
+    border: 1px solid gray;
+    width: 0px;
+    
+
+    
+}
+
+.x {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+.plus {
+   color: grey;
+   padding: 4px;
+   border: 1px solid gray;
+   border-radius: 4px;
 }
